@@ -13,11 +13,9 @@ Press.2 <- Press %>%
   select(-X__1) %>% 
   select(-index)
 
-Press.3 <- unique(Press.2)
+Press <- Press.2
 
-Press <- Press.3
-
-rm(AllArticles, Press.2, Press.3, South_Florida_Sun_Sentinel, Telegraph_Herald, The_Desert_Sun, 
+rm(AllArticles, Press.2, South_Florida_Sun_Sentinel, Telegraph_Herald, The_Desert_Sun, 
    The_Dily_Beast,The_Examiner, The_Journal_News, Arizona, 
    Charleston_Gazette_Mail, Los_Angeles_Times, El_Paso_Times, Local_Media_1,
    Local_Media_2, Chicago_Tribune, New_York_Post, New_York_Times,
