@@ -277,7 +277,7 @@ mynewnet<-network_from_LDA(LDAobject=LDAfit,
 
 
 
-##Plot frame usage and salience all newspapers
+########################################Plot frame usage and salience all newspapers######################################
 all_date <- aggregate(x = meta_theta_df_ALL[,c(7:(ncol(meta_theta_df_ALL)))], 
                       by = list(meta_theta_df_ALL$date), FUN = "mean")
 
@@ -339,7 +339,7 @@ library(gridExtra)
 
 grid.arrange(time_plot, all_plot, nrow = 2)
 
-##Plot frame usage by type of newspaper
+############################################Plot frame usage by type of newspaper##############################################
 part <- meta_theta_df_ALL[meta_theta_df_ALL$publication == "The Examiner" | 
                              meta_theta_df_ALL$publication == "The Daily Beast",]
 
